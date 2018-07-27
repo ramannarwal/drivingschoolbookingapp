@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import phoneImage from '../../Images/phone.png';
-import facebookIcon from '../../Images/facebook.ico';
+import facebookIcon from '../../Images/facebook.png';
 import yelpIcon from '../../Images/yelp.png';
 import locationImage from '../../Images/servingLocation.png';
 import image from '../../Images/background.jpg';
