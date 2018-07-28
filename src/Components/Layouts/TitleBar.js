@@ -17,7 +17,7 @@ const TitleBar =() =>{
       }
 return(
  
-    <AppBar position="static" style = {divStyle}>
+    <AppBar position="relative" style = {divStyle}>
         <Toolbar > 
             <div style = {style}>  
                 <img src={logo} alt="Smiley face"   style = {{height:"75px", margin: '40px 0 0 10px', border: '2px solid grey', borderRadius: '15px',float: 'left'}}/>       
