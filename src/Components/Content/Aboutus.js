@@ -7,7 +7,7 @@ const BookingForm=()=>{
   return(
 
         <div>
-         <h1 style = {{ color: 'black', fontSize: '3em', textAlign:'center', fontFamily: 'Courier New'}}>- OUR MISSION -</h1>
+         <h1 style = {{ color: 'black', fontSize: '3em', textAlign:'center', fontFamily: 'Courier New'}}>-OUR MISSION-</h1>
          <p style = {{ color: 'black', fontSize: '1.4em', textAlign:'center', fontFamily: 'Comic Sans MS'}}>Help each student to implement good driving techniques, become confident and defensive drivers!</p>
          <h1 style = {{ marginTop: '60px', color: 'black', fontSize: '3em', textAlign:'center', fontFamily: 'Courier New'}}>About</h1>
          <p style = {{ color: 'black', fontSize: '1.4em', textAlign:'center', fontFamily: 'Comic Sans MS'}}>You will be learning from a certified California  driving instructor.

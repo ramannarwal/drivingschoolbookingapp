@@ -53,7 +53,8 @@ class LinksBar extends React.Component {
               onChange={this.handleChange}
               indicatorColor="primary"
               textColor="default"
-              centered
+              fullWidth
+
             >
               <Tab label="Home"/>
               <Tab label="Book Appointment" />
