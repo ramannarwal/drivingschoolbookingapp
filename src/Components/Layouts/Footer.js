@@ -20,7 +20,8 @@ return(
     <Fragment  >
         <div style = {divStyle} > 
             <div style= {{display:'inline-block', float:'left', marginLeft: '3%'}}>
-                <h3 style ={{color: 'white' }}>Serving Locations:<span style ={{fontSize:'0.9em'}}> Santa Clara and surrounding area</span></h3>
+                <h3 style ={{color: 'white' }}>Serving Locations:<span style ={{fontSize:'0.9em'}}> Santa Clara, Sunnyvale</span></h3>
+                <h3 style ={{color: 'white' }}><span style ={{fontSize:'0.9em'}}>Mountain View, Cupertino, Campbell and surrounding area</span></h3>
                 <img style={{height: '180px', width: '360px', border: ' 1.5px solid black'}} alt="servingLocationMap" src={locationImage}/>
             </div>
             <div style= {{display:'inline-block', float:'left', marginLeft: '10%'}}>        

@@ -33,69 +33,22 @@ function Reviews(props) {
   const { classes } = props;
   var divStyle = {
     height: '80%',
-    width: '60%',
-   
+    width: '60%',  
   };
-  
+
+  var imageList = [image1, image3, image2, image5, image4, image6, image7, image8, image9];
+
+  var images = imageList.map((image) => 
+      <Card className={classes.card}>
+            <CardMedia>
+              <img style ={divStyle} alt="yelp review"
+              src={image} />
+          </CardMedia>
+      </Card>);
+
   return (
     <div>
-      <Card className={classes.card}>
-        <CardMedia>
-            <img style ={divStyle} alt="yelp review"
-            src={image1} />
-        </CardMedia>
-      </Card>
-
-      <Card className={classes.card}>
-        <CardMedia>
-            <img  style ={divStyle}  alt="yelp review"
-            src={image3} />
-        </CardMedia>
-      </Card>
-
-      <Card className={classes.card}>
-        <CardMedia>
-            <img style ={divStyle} alt="yelp review"
-            src={image2} />
-        </CardMedia>
-      </Card>
-
-      <Card className={classes.card}>
-        <CardMedia>
-            <img style ={divStyle} alt="yelp review"
-            src={image5} />
-        </CardMedia>
-      </Card>
-      <Card className={classes.card}>
-        <CardMedia>
-            <img style ={divStyle} alt="yelp review"
-            src={image9} />
-        </CardMedia>
-      </Card>
-      <Card className={classes.card}>
-        <CardMedia>
-            <img style ={divStyle} alt="yelp review"
-            src={image7} />
-        </CardMedia>
-      </Card>
-      <Card className={classes.card}>
-        <CardMedia>
-            <img style ={divStyle} alt="yelp review"
-            src={image6} />
-        </CardMedia>
-      </Card>
-      <Card className={classes.card}>
-        <CardMedia>
-            <img style ={divStyle} alt="yelp review"
-            src={image8} />
-        </CardMedia>
-      </Card>
-      <Card className={classes.card}>
-        <CardMedia>
-            <img style ={divStyle} alt="yelp review"
-            src={image4} />
-        </CardMedia>
-      </Card>
+     {images}
     </div>
   );
 }

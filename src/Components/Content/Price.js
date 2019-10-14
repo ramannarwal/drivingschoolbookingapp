@@ -42,17 +42,17 @@ const styles = theme => ({
 });
 
 let id = 0;
-function createData(name, hours, price, paymentType,pickup) {
+function createData(name, price, paymentType,pickup) {
   id += 1;
-  return { id, name, hours, price, paymentType,pickup };
+  return { id, name, price, paymentType,pickup };
 }
 
 const data = [
-  createData('1 Session',  '2 hours', '$85', 'Cash/Check', 'FREE'),
-  createData('2 Sessions', '4 hours', '$170', 'Cash/Check', 'FREE'),
-  createData('3 Sessions', '6 hours', '$240', 'Cash/Check', 'FREE'),
-  createData('4 Sessions', '8 hours', '$320', 'Cash/Check', 'FREE'),
-  createData('5 Sessions', '10 hours', '$400', 'Cash/Check', 'FREE'),
+  createData('1st Class', '$95', 'Cash / Check', 'Free' ),
+  createData('2nd Class', '$95', 'Cash / Check', 'Free'),
+  createData('3rd class', '$80(6 hours = $270 total)', 'Cash / Check', 'Free'),
+  createData('DMV Test', '$120', 'Cash / Check', 'Free'),
+  createData('$90 for each class after 3 classes')
 ];
 
 function Price(props) {
@@ -65,7 +65,6 @@ function Price(props) {
         <TableHead >
           <TableRow >
             <CustomTableCell>Lesson(s)</CustomTableCell>
-            <CustomTableCell >Hours</CustomTableCell>
             <CustomTableCell >Price</CustomTableCell>  
             <CustomTableCell>Payment Type</CustomTableCell>  
             <CustomTableCell>PickUp/DropOff</CustomTableCell>    
@@ -78,7 +77,6 @@ function Price(props) {
                 <CustomTableCell component="th" scope="row">
                   {n.name}
                 </CustomTableCell>
-                <CustomTableCell>{n.hours}</CustomTableCell>
                 <CustomTableCell>{n.price}</CustomTableCell>
                 <CustomTableCell>{n.paymentType}</CustomTableCell>
                 <CustomTableCell>{n.pickup}</CustomTableCell>

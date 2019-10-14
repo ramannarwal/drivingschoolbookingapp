@@ -56,8 +56,8 @@ class LinksBar extends React.Component {
               centered
             >
               <Tab label="Home"/>
-              <Tab label="Book Appointment" />
               <Tab label="Pricing" />
+              <Tab label="Success Stories" />
               <Tab label="Testimonials" />
               <Tab label="About US" />
             </Tabs>
@@ -69,8 +69,8 @@ class LinksBar extends React.Component {
             onChangeIndex={this.handleChangeIndex}
           >
             <TabContainer dir={theme.direction}><Home/></TabContainer>
-            <TabContainer dir={theme.direction}><BookingForm/></TabContainer>
             <TabContainer dir={theme.direction}><Price/></TabContainer>
+            <TabContainer dir={theme.direction}><BookingForm/></TabContainer>
             <TabContainer dir={theme.direction}><Reviews/></TabContainer>
             <TabContainer dir={theme.direction}><Aboutus/></TabContainer>
         </SwipeableViews>
